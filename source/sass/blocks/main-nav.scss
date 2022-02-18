@@ -1,0 +1,20 @@
+.main-nav {
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+
+    &__list {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__link {
+        text-decoration: none;
+        margin-left: 50px;
+     
+        &:hover {
+            color: $basicdecor;
+        }
+    }
+}
