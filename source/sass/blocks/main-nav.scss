@@ -14,14 +14,6 @@
         list-style-type: none;
     }
 
-    &__item {
-
-      &:first-child {
-        .main-nav__link{
-        }
-      }
-    }
-
     &__link {
         text-decoration: none;
         margin-left: 50px;

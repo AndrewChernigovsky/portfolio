@@ -1,0 +1,17 @@
+.avatar {
+    position: absolute;
+    width: 470px;
+    height: 470px;
+    overflow: hidden;
+    border-radius: 50%;
+    top: 119px;
+    left: -90px;
+
+    img {
+        width: 100%;    
+        height: auto;
+        position: absolute;
+        top: -237px;
+
+    }
+}

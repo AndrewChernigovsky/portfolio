@@ -1,0 +1,27 @@
+.section {
+    position: relative;
+    max-width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &::after{
+        content: '';
+        display: block;
+        position: absolute;
+        min-width: 200%;
+        height: 3px;
+        top: 30px;
+        left: 330px;
+        background-color: $basicblue1;
+    }
+}
+
+.education {
+    margin-left: 60px;
+
+    &__wrapper {
+        min-width: 200px;
+    }
+}
+
+

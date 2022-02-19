@@ -55,15 +55,83 @@
                         </div>
                 </div>
                 <section class="preview">
-                        <div class="preview__wrapper container">
-                                <div class="preview__wrapper-block"></div>
-                                <div class="preview__wrapper-block2"></div>
+                        <div class="preview__wrapper">
+                                <div class="persona container">
+                                        <div class="persona__wrapper">
+                                                <div class="avatar">
+                                                        <picture>
+                                                                <source type="image/webp" media="(min-width: 1024px)" srcset="
+                                                                      img/content/avatar.webp    1x,
+                                                                      img/content/avatar@2x.webp 2x
+                                                                    " />
+                                                                <source type="image/webp" media="(min-width: 320px)" srcset="
+                                                                      img/content/avatar-tb.webp    1x,
+                                                                      img/content/avatar-tb@2x.webp 2x
+                                                                    " />
+                                                                <!-- 1х: 253px; 2x: 566px -->
+                                                                <img class="avatarImage" src="img/content/avatar.jpg" alt="avatar Andrew Izosimov" loading="lazy"
+                                                                  width="253" height="566" />
+                                                              </picture>
+                                                </div>
+                                        </div>
+                                        <div class="persona__text">
+                                                <h1 class="f-basicLightHeading t-m">Изосимов Андрей Андреевич</h1>
+                                                <h2 class="f-basicLightSubtitle t-m">Frontend Developer</h2>
+                                                <div class="ageCity">
+                                                        <p class="f-basicLightParagraph t-m">Возраст: 26 лет</p>
+                                                        <p class="f-basicLightParagraph t-m">г.Псков</p>
+                                                </div>
+                                                <p class="f-basicLightParagraph t-m">Возможен переезд</p>
+                                        </div>
+                                </div>
                         </div>
-                       
                 </section>
         </header>
-        <main class="main-section"></main>
-        <footer class="mainFooter container"></footer>
+        <main class="main-section">
+                <div class="main-section__wrapper container">
+                        <section class="education">
+                                <div class="education__wrapper">
+                                        <h2 class="f-basicLightSubtitle t-b section">Образование</h2>
+                                        <div class="educationImage-wrapper">
+                                                <picture>
+                                                        <source type="image/webp" media="(min-width: 1024px)" srcset="
+                                                              img/content/Book..webp    1x,
+                                                              img/content/Book.@2x.webp 2x
+                                                            " />
+                                                        <source type="image/webp" media="(min-width: 320px)" srcset="
+                                                              img/content/Book-tb.webp    1x,
+                                                              img/content/Book-tb@2x.webp 2x
+                                                            " />
+                                                        <!-- 1х: 253px; 2x: 566px -->
+                                                        <img class="educationImage" src="img/content/Book.png" alt="avatar Andrew Izosimov" loading="lazy"
+                                                          width="253" height="566" />
+                                                </picture>
+                                        </div>
+                                      
+                                </div>
+                        </section>
+                        <section>
+                                <h2 class="f-basicLightSubtitle t-b">Опыт работы</h2>
+                        </section>
+                        <section>
+                                <h2 class="f-basicLightSubtitle t-b">Преимущества</h2>
+                        </section>
+                        <section>
+                                <h2 class="f-basicLightSubtitle t-b">Навыки</h2>
+                        </section>
+                        <section>
+                                <h2 class="f-basicLightSubtitle t-b">Проекты</h2>
+                        </section>
+                        <section>
+                                <h2 class="f-basicLightSubtitle t-b">О себе</h2>
+                        </section>
+                </div>
+        </main>
+        <footer class="mainFooter container">
+                <section>
+                        <h2 class="f-basicLightSubtitle t-b">Контакты</h2>
+                </section>
+        </footer>
         <script src="js/script.js"></script>
 </body>
 
