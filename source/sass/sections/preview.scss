@@ -1,0 +1,46 @@
+.preview {
+    min-height: 616px;
+    min-width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 410px;
+
+    &__wrapper {
+        background-color:  $basicblue1;
+        min-height: inherit;
+        position: relative;
+
+        &::before {
+                content: "";
+                display: block;
+                background-color:  $basicOrange;
+                min-height: 158px;
+                position: absolute;
+                min-width: 80%;
+                z-index: 1;
+                bottom: 0;
+                right: 0;
+        }
+
+        &::after {
+                content: "";
+                display: block;
+                background-color:  $basicblue;
+                min-height: 158px;
+                position: absolute;
+                min-width: 80%;
+                z-index: 0;
+                bottom: 0;
+                right: 0;
+        }
+    }
+
+    &__wrapper-block {
+     
+    }
+
+    &__wrapper-block2 {
+     
+    }
+}

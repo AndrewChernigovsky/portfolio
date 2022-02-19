@@ -1,0 +1,7 @@
+.main-header {
+    position: relative;
+    &__wrapper {
+        min-height: 162px;
+        background-color:  $basicblue;
+    }
+}
