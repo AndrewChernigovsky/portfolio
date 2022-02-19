@@ -5,16 +5,32 @@
 
     &__list {
         display: flex;
+        flex-wrap: wrap;
         justify-content: flex-start;
         align-items: center;
+        margin-left: 0;
+        padding-left: 0;
+        list-style-type: none;
+    }
+
+    &__item {
+
+      &:first-child {
+        .main-nav__link{
+        }
+      }
     }
 
     &__link {
         text-decoration: none;
         margin-left: 50px;
-     
+
         &:hover {
             color: $basicdecor;
         }
     }
+}
+
+.main-nav__toggle {
+  display: none;
 }
