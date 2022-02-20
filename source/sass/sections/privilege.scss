@@ -1,0 +1,35 @@
+.privilege {
+    background-color:  $basicblue;
+    min-height: 400px;
+    margin-bottom: 35px;
+
+    .f-basicLightSubtitle {
+        padding: 20px 40px;
+        background-color: $basicblue1;
+        color: $white;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    &__wrapper {
+        padding-bottom: 20px;
+
+        .f-basicLightParagraph {
+            padding-left: 50px;
+            position: relative;
+            font-weight: 400;
+
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                background-color: $white;
+                border-radius: 50%;
+                left: 20px;
+                top: 4px;
+            }
+        }
+    }
+}
