@@ -3,17 +3,6 @@
     max-width: 300px;
     display: flex;
     flex-wrap: wrap;
-
-    &::after{
-        content: '';
-        display: block;
-        position: absolute;
-        min-width: 200%;
-        height: 3px;
-        top: 30px;
-        left: 330px;
-        background-color: $basicblue1;
-    }
 }
 
 .education {
@@ -21,7 +10,82 @@
 
     &__wrapper {
         min-width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+
+        .f-basicLightSubtitle {
+            max-width: 400px;
+            word-break: break-all;
+        }
+
+        &::before{
+            content: '';
+            display: block;
+            position: absolute;
+            min-width: 56%;
+            height: 3px;
+            top: 69px;
+            left: 336px;
+            background-color: $basicblue1;
+        }
+    }
+
+    &__data {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__data-wrapper {
+        .f-basicLightParagraph{
+            color: $black;
+            font-weight: 400;
+        }
+    }
+
+    &__data-inner {
+        .f-basicLightParagraph {
+            color: $black;
+            font-weight: 700;
+        }
     }
 }
 
+.educationImage-wrapper {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: $basicblue;
+    border-radius: 50%;
 
+    img {
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        left: 12px;
+        top: 12px;    
+    }
+}
+
+.education-sertificates {
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__slide {
+        img {
+            width: 300px;
+            height: auto;
+            transition: 0.3s ease;
+            
+            &:hover {
+                width: 80vw;
+                transition: 0.3s ease;
+            }
+        }
+      
+    }
+}
