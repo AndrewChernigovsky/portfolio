@@ -41,6 +41,22 @@
 
     &__list {
         list-style-type: none;
+
+        li {
+                position: relative;
+
+                &::before {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 50%;
+                        background-color: $basicblue1;
+                        top: 7px;
+                        left: -33px;
+                }
+        }
     }
 }
 
@@ -56,6 +72,6 @@
         height: 70px;
         position: absolute;
         left: 12px;
-        top: 12px;    
+        top: 12px;
     }
 }
