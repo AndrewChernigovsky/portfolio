@@ -80,14 +80,14 @@
       <main class="main-section">
             <div class="main-section__wrapper container">
                   <section class="education">
-                        <div class="education__wrapper">
+                        <div class="iconwrapper">
                               <h2 class="f-basicLightSubtitle t-b section">Образование</h2>
-                              <div class="educationImage-wrapper">
+                              <div class="iconImage">
                                     <picture>
                                           <source type="image/webp" media="(min-width: 320px)" srcset="
                                                               img/icons/Book.webp
                                                             " />
-                                          <img class="educationImage" src="img/icons/Book.png" alt="book" loading="lazy"
+                                          <img src="img/icons/Book.png" alt="book" loading="lazy"
                                                 width="50" height="50" />
                                     </picture>
                               </div>
@@ -183,14 +183,14 @@
                         </div>
                   </section>
                   <section class="job">
-                        <div class="job__wrapper">
+                        <div class="iconwrapper">
                               <h2 class="f-basicLightSubtitle t-b">Опыт работы</h2>
-                              <div class="jobImage-wrapper">
+                              <div class="iconImage">
                                     <picture>
                                           <source type="image/webp" media="(min-width: 320px)" srcset="
                                                               img/icons/Services.webp
                                                             " />
-                                          <img class="jobImage" src="img/icons/Services.png" alt="book" loading="lazy"
+                                          <img src="img/icons/Services.png" alt="book" loading="lazy"
                                                 width="50" height="50" />
                                     </picture>
                               </div>
@@ -234,7 +234,6 @@
                               </div>
                         </div>
                   </section>
-
                   <section class="privilege">
                         <h2 class="f-basicLightSubtitle t-b">Навыки</h2>
                         <ul class="privilege__wrapper skills-list">
@@ -263,18 +262,94 @@
                                     <li class="f-basicLightParagraph">Webpack</li>
                               </div>
                   </section>
-                  <section>
-                        <h2 class="f-basicLightSubtitle t-b">Проекты</h2>
+                  <section class="projects">
+                        <div class="iconwrapper">
+                                <h2 class="f-basicLightSubtitle t-b">Проекты</h2>
+                                <div class="iconImage">
+                                      <picture>
+                                            <source type="image/webp" media="(min-width: 320px)" srcset="
+                                                                img/icons/Idea.webp
+                                                              " />
+                                            <img src="img/icons/Idea.png" alt="book" loading="lazy"
+                                                  width="50" height="50" />
+                                      </picture>
+                                </div>
+                        </div>
+                        <ul class="projects__list">
+                                <li class="projects__item">
+                                        <p class="f-basicLightSubtitle">
+                                                <a href="https://andrewchernigovsky.github.io/caclulaters/">Калькуляторы и вкладки</a>
+                                        </p>
+                                </li>
+                                <li class="projects__item">
+                                        <p class="f-basicLightSubtitle">
+                                                <a href="https://andrewchernigovsky.github.io/605037-keksobooking-23.github.io/">Проект из Академии, работа с фильтрами и API  на JS</a>
+                                        </p>
+                                </li>
+                                <li class="projects__item">
+                                        <p class="f-basicLightSubtitle">
+                                                <a href="https://andrewchernigovsky.github.io/Computres.github.io/">Мой проект для тренировки и оттачивания навыков. Тренировка JS</a>
+                                        </p>
+                                </li>
+                                <li class="projects__item">
+                                        <p class="f-basicLightSubtitle">
+                                                <a href="https://andrewchernigovsky.github.io/apv-7/">Командная разработка проекта в компании “Global Verst”</a>
+                                        </p>
+                                </li>
+                                <li class="projects__item">
+                                        <p class="f-basicLightSubtitle">
+                                                <a href="#mms">Приложение to do list на React</a>
+                                        </p>
+                                </li>
+                        </ul>
                   </section>
-                  <section>
-                        <h2 class="f-basicLightSubtitle t-b">О себе</h2>
+                  <section class="mySelf">
+                        <div class="iconwrapper">
+                                <h2 class="f-basicLightSubtitle t-b">О себе</h2>
+                                <div class="iconImage">
+                                      <picture>
+                                            <source type="image/webp" media="(min-width: 320px)" srcset="
+                                                                img/icons/Fermer.webp
+                                                              " />
+                                            <img src="img/icons/Fermer.png" alt="book" loading="lazy"
+                                                  width="50" height="50" />
+                                      </picture>
+                                </div>
+                        </div>
+                        <ul class="mySelf__list">
+                                <li class="mySelf__item">
+                                        <p class="mySelf__text">Семейное положение:</p>
+                                        <span class="mySelf__subscribe">Холост</span>
+                                </li>
+                                <li class="mySelf__item">
+                                        <p class="mySelf__text">Возраст:</p>
+                                        <span class="mySelf__subscribe">26 лет</span>
+                                </li>
+                                <li class="mySelf__item">
+                                        <p class="mySelf__text">Город проживания:</p>
+                                        <span class="mySelf__subscribe">г.Псков</span>
+                                </li>
+                                <li class="mySelf__item">
+                                        <p class="mySelf__text">Гражданство:</p>
+                                        <span class="mySelf__subscribe">РФ</span>
+                                </li>
+                                <li class="mySelf__item">
+                                        <p class="mySelf__text">Пол</p>
+                                        <span class="mySelf__subscribe">Мужской</span>
+                                </li>
+                        </ul>
                   </section>
             </div>
       </main>
       <footer class="mainFooter container">
-            <section>
-                  <h2 class="f-basicLightSubtitle t-b">Контакты</h2>
-            </section>
+            <section class="privilege">
+                <h2 class="f-basicLightSubtitle t-b">Контакты</h2>
+                <div class="privilege__wrapper">
+                     <a class="f-basicLightParagrap" href="tel:+79532322112">+7 953 232 21 12</a>
+                     <a class="f-basicLightParagrap" href="mailto:chernigovsky108@gmail.com">chernigovsky108@gmail.com</a>
+                     <a class="f-basicLightParagrap" href="https://vk.com/andrewchernigovsky" >vk.com/andrewchernigovsky</a>
+                </div>
+          </section>
       </footer>
       <script src="js/script.js"></script>
 </body>

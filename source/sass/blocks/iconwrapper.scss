@@ -1,0 +1,34 @@
+.iconwrapper {
+        min-width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+
+        &::before{
+            content: '';
+            display: block;
+            position: absolute;
+            min-width: 56%;
+            height: 3px;
+            top: 69px;
+            left: 336px;
+            background-color: $basicblue1;
+        }
+}
+
+.iconImage {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        background-color: $basicblue1;
+        border-radius: 50%;
+
+        img {
+            width: 70px;
+            height: 70px;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 15%);
+        }
+}

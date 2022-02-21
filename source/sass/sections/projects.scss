@@ -1,0 +1,33 @@
+.projects {
+        &__list {
+                list-style-type: none;
+        }
+
+        &__item {
+                position: relative;
+
+                a {
+                        text-decoration: none;
+
+                        &:hover {
+                                color: $basicdecor;
+                                transition: 0.3s ease;
+                        }
+                        &:visited {
+                                color: $black;
+                        }
+                }
+
+                &::before{
+                        position: absolute;
+                        content: '';
+                        display: block;
+                        width: 50px;
+                        height: 2px;
+                        background-color: $basicblue1;
+                        top: 26px;
+                        left: -56px;
+
+                }
+        }
+}
