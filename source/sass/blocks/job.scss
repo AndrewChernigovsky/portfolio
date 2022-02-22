@@ -1,77 +1,52 @@
 .job {
-//     &__wrapper {
-//         min-width: 200px;
-//         display: flex;
-//         align-items: center;
-//         justify-content: space-between;
-//         position: relative;
+        &__data {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                max-width: 63%;
+                min-width: 43%;
 
-//         &::before{
-//             content: '';
-//             display: block;
-//             position: absolute;
-//             min-width: 56%;
-//             height: 3px;
-//             top: 69px;
-//             left: 336px;
-//             background-color: $basicblue1;
-//         }
-//     }
+                .f-basicLightParagraph {
+                        color: $black;
+                }
 
-    &__data {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 25%;
+                span.f-basicLightParagraph:first-child {
+                        font-weight: 700;
+                }
 
-        .f-basicLightParagraph {
-            color: $black;
-        }
-
-        span.f-basicLightParagraph {
-            font-weight: 700;
-        }
-    }
-
-    &__facts {
-        .f-basicLightParagraph {
-            color: $black;
-        }
-    }
-
-    &__list {
-        list-style-type: none;
-
-        li {
-                position: relative;
-
-                &::before {
-                        content: '';
-                        display: block;
-                        position: absolute;
-                        width: 15px;
-                        height: 15px;
-                        border-radius: 50%;
-                        background-color: $basicblue1;
-                        top: 7px;
-                        left: -33px;
+                span.f-basicLightParagraph {
+                        font-weight: 400;
+                        font-size: 2.4rem;
                 }
         }
-    }
+
+        &__facts {
+                .f-basicLightParagraph {
+                        color: $black;
+                }
+        }
+
+        &__list {
+                list-style-type: none;
+
+                li {
+                        position: relative;
+
+                        &::before {
+                                content: "";
+                                display: block;
+                                position: absolute;
+                                width: 15px;
+                                height: 15px;
+                                border-radius: 50%;
+                                background-color: $basicblue1;
+                                top: 7px;
+                                left: -33px;
+                        }
+                }
+        }
+
+        .company {
+                display: grid;
+        }
 }
-
-// .jobImage-wrapper {
-//     position: relative;
-//     width: 100px;
-//     height: 100px;
-//     background-color: $basicblue1;
-//     border-radius: 50%;
-
-//     img {
-//         width: 70px;
-//         height: 70px;
-//         position: absolute;
-//         left: 12px;
-//         top: 12px;
-//     }
-// }
