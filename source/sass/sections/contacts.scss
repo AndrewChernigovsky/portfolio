@@ -1,6 +1,49 @@
 .contacts {
-        .f-basicLightParagrap {
+        background-color:  $basicblue;
+        min-height: 400px;
+        margin-bottom: 35px;
+
+        .f-basicLightSubtitle {
+                padding: 20px 40px;
+                background-color: $basicblue1;
                 color: $white;
-                text-decoration: none;
+                text-transform: uppercase;
+                text-align: center;
+        }
+
+        &__wrapper {
+                padding-bottom: 20px;
+
+                .f-basicLightParagraph {
+                        padding-left: 50px;
+                        position: relative;
+                        font-weight: 400;
+                        color: $white;
+                        text-decoration: none;
+                }
+        }
+
+        .phone::before,
+        .email::before,
+        .vk::before {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                left: 20px;
+                top: 4px;
+        }
+
+        .phone::before {
+                background: url('img/icons/phone.png') center no-repeat;
+        }
+
+        .email::before {
+                background: url('img/icons/email.png') center no-repeat;
+        }
+
+        .vk::before {
+                background: url('img/icons/vk.png') center no-repeat;
         }
 }
