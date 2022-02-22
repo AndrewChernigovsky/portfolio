@@ -23,24 +23,24 @@
                                                 <ul class="main-nav__list">
                                                         <li class="main-nav__item">
                                                                 <a class="main-nav__link f-basicLight "
-                                                                        href="#no__scroll">Образование</a>
+                                                                        href="#education">Образование</a>
                                                         </li>
                                                         <li class="main-nav__item">
                                                                 <a class="main-nav__link f-basicLight "
-                                                                        href="#no__scroll">Опыт
+                                                                        href="#job">Опыт
                                                                         работы</a>
                                                         </li>
                                                         <li class="main-nav__item">
                                                                 <a class="main-nav__link f-basicLight "
-                                                                        href="#no__scroll">Проекты</a>
+                                                                        href="#projects">Проекты</a>
                                                         </li>
                                                         <li class="main-nav__item">
                                                                 <a class="main-nav__link f-basicLight "
-                                                                        href="#no__scroll">О себе</a>
+                                                                        href="#mySelf">О себе</a>
                                                         </li>
                                                         <li class="main-nav__item">
                                                                 <a class="main-nav__link f-basicLight "
-                                                                        href="#no__scroll">Контакты</a>
+                                                                        href="#contacts">Контакты</a>
                                                         </li>
                                                 </ul>
                                         </div>
@@ -85,7 +85,7 @@
         </header>
         <main class="main-section">
                 <div class="main-section__wrapper container">
-                        <section class="education">
+                        <section class="education" id="education">
                                 <div class="iconwrapper">
                                         <h2 class="f-basicLightSubtitle t-b section">Образование</h2>
                                         <div class="iconImage">
@@ -101,7 +101,7 @@
                                 <div class="education__data">
                                         <div class="education__data-wrapper">
                                                 <p class="f-basicLightParagraph">2021г</p>
-                                                <p class="f-basicLightParagraph">01.18 по 01.08</p>
+                                                <p class="f-basicLightParagraph">18.01 по 01.08</p>
                                         </div>
                                         <div class="education__data-inner">
                                                 <p class="f-basicLightParagraph">HTMTLAcademy “Профессия Фронтенд
@@ -111,7 +111,7 @@
                                 <div class="education__data">
                                         <div class="education__data-wrapper">
                                                 <p class="f-basicLightParagraph">2021г</p>
-                                                <p class="f-basicLightParagraph">01.18 по 01.08</p>
+                                                <p class="f-basicLightParagraph">07.12 по 22.12</p>
                                         </div>
                                         <div class="education__data-inner">
                                                 <p class="f-basicLightParagraph">“Грейдирование”</p>
@@ -119,8 +119,8 @@
                                 </div>
                                 <div class="education__data">
                                         <div class="education__data-wrapper">
-                                                <p class="f-basicLightParagraph">2021г</p>
-                                                <p class="f-basicLightParagraph">01.18 по 01.08</p>
+                                                <p class="f-basicLightParagraph">2022г</p>
+                                                <p class="f-basicLightParagraph">18.01 по сегодня</p>
                                         </div>
                                         <div class="education__data-inner">
                                                 <p class="f-basicLightParagraph">“Акселератор”</p>
@@ -199,7 +199,7 @@
                                                 неуверенность</p>
                                 </div>
                         </section>
-                        <section class="job">
+                        <section class="job" id="job">
                                 <div class="iconwrapper">
                                         <h2 class="f-basicLightSubtitle t-b">Опыт работы</h2>
                                         <div class="iconImage">
@@ -296,7 +296,7 @@
                                                 <li class="f-basicLightParagraph">Webpack</li>
                                         </div>
                         </section>
-                        <section class="projects">
+                        <section class="projects" id="projects">
                                 <div class="iconwrapper">
                                         <h2 class="f-basicLightSubtitle t-b">Проекты</h2>
                                         <div class="iconImage">
@@ -318,15 +318,13 @@
                                         </li>
                                         <li class="projects__item">
                                                 <p class="f-basicLightParagraph">
-                                                        <a
-                                                                href="https://andrewchernigovsky.github.io/605037-keksobooking-23.github.io/">Проект
+                                                        <a href="https://andrewchernigovsky.github.io/605037-keksobooking-23.github.io/">Проект
                                                                 из Академии, работа с фильтрами и API на JS</a>
                                                 </p>
                                         </li>
                                         <li class="projects__item">
                                                 <p class="f-basicLightParagraph">
-                                                        <a
-                                                                href="https://andrewchernigovsky.github.io/Computres.github.io/">Мой
+                                                        <a href="https://andrewchernigovsky.github.io/Computres.github.io/">Мой
                                                                 проект для тренировки и оттачивания навыков. Тренировка
                                                                 JS</a>
                                                 </p>
@@ -344,7 +342,7 @@
                                         </li>
                                 </ul>
                         </section>
-                        <section class="mySelf">
+                        <section class="mySelf" id="mySelf">
                                 <div class="iconwrapper">
                                         <h2 class="f-basicLightSubtitle t-b">О себе</h2>
                                         <div class="iconImage">
@@ -383,14 +381,28 @@
                 </div>
         </main>
         <footer class="mainFooter container">
-                <section class="contacts">
+                <section class="contacts" id="contacts">
                         <h2 class="f-basicLightSubtitle t-b">Контакты</h2>
                         <div class="contacts__wrapper">
-                                <a class="f-basicLightParagraph phone" href="tel:+79532322112">+7 953 232 21 12</a>
+                              <a class="f-basicLightParagraph phone" href="tel:+79532322112">    
+                                    <svg role="img" class="icon" width="67" height="20" aria-label="phone">
+                                          <use xlink:href="img/sprite.svg#phone"></use>
+                                    </svg>
+                                    +7 953 232 21 12
+                              </a>
                                 <a class="f-basicLightParagraph email"
-                                        href="mailto:chernigovsky108@gmail.com">chernigovsky108@gmail.com</a>
+                                        href="mailto:chernigovsky108@gmail.com">
+                                          <svg role="img" class="icon" width="67" height="20" aria-label="email">
+                                                <use xlink:href="img/sprite.svg#email"></use>
+                                          </svg>
+                                    chernigovsky108@gmail.com</a>
                                 <a class="f-basicLightParagraph vk"
-                                        href="https://vk.com/andrewchernigovsky">vk.com/andrewchernigovsky</a>
+                                        href="https://vk.com/andrewchernigovsky">
+                                        <svg role="img" class="icon" width="67" height="20" aria-label="vk">
+                                          <use xlink:href="img/sprite.svg#vk"></use>
+                                    </svg>
+                                    vk.com/andrewchernigovsky
+                              </a>
                         </div>
                 </section>
         </footer>

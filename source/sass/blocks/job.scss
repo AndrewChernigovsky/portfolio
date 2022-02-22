@@ -3,8 +3,8 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                max-width: 63%;
-                min-width: 43%;
+                max-width: 40%;
+                min-width: 23%;            
 
                 .f-basicLightParagraph {
                         color: $black;
@@ -23,6 +23,12 @@
         &__facts {
                 .f-basicLightParagraph {
                         color: $black;
+                }
+
+                h3 {
+                    color: $basicblue;
+                    font-size: 2.4rem;
+                    font-weight: 700;
                 }
         }
 

@@ -9,13 +9,15 @@
                 a {
                         text-decoration: none;
                         color: $black;
+                        transition: 0.3s ease;
+                        
+                        &:visited {
+                                color: $black;
+                        }
 
                         &:hover {
                                 color: $basicdecor;
                                 transition: 0.3s ease;
-                        }
-                        &:visited {
-                                color: $black;
                         }
                 }
 

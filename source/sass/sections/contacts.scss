@@ -1,7 +1,6 @@
 .contacts {
         background-color:  $basicblue;
-        min-height: 400px;
-        margin-bottom: 35px;
+        min-height: 240px;
 
         .f-basicLightSubtitle {
                 padding: 20px 40px;
@@ -13,6 +12,10 @@
 
         &__wrapper {
                 padding-bottom: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
 
                 .f-basicLightParagraph {
                         padding-left: 50px;
@@ -21,29 +24,24 @@
                         color: $white;
                         text-decoration: none;
                 }
-        }
 
-        .phone::before,
-        .email::before,
-        .vk::before {
-                content: '';
-                display: block;
-                position: absolute;
-                width: 20px;
-                height: 20px;
-                left: 20px;
-                top: 4px;
-        }
+                a {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-bottom: 20px;
+                        color: $white;
+                        transition: 0.3s ease;
 
-        .phone::before {
-                background: url('img/icons/phone.png') center no-repeat;
-        }
+                        &:hover {
+                                color: $basicdecor;
+                                transition: 0.3s ease;
+                        };
 
-        .email::before {
-                background: url('img/icons/email.png') center no-repeat;
-        }
-
-        .vk::before {
-                background: url('img/icons/vk.png') center no-repeat;
+                        &:hover svg {
+                                fill: $basicdecor;
+                                transition: 0.3s ease;
+                        }
+                }
         }
 }
