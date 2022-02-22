@@ -1,20 +1,52 @@
 'use strict';
 
 // BurgerMenu
-let navMain = document.querySelector('.main-nav');
-let navToggle = document.querySelector('.main-nav__toggle');
+let navMain = document.querySelector('.main-nav'),
+    navToggle = document.querySelector('.main-nav__toggle'),
+    navLinks = document.querySelectorAll('.main-nav__link'),
+    navList = document.querySelector('.main-nav__list'),
+    body = document.getElementsByTagName('body')[0],
+    mainNavClosed = 'main-nav--closed',
+    mainNavOpened = 'main-nav--opened';
 
-navMain.classList.remove('main-nav--nojs');
+navMain.classList.remove("main-nav--nojs");
 
-navToggle.addEventListener('click', function() {
-    if (navMain.classList.contains('main-nav--closed')) {
-    navMain.classList.remove('main-nav--closed');
-    navMain.classList.add('main-nav--opened');
-    } else {
-    navMain.classList.add('main-nav--closed');
-    navMain.classList.remove('main-nav--opened');
-    }
+if (navMain.classList.contains(mainNavOpened)) {
+  navMain.classList.remove(mainNavOpened);
+  navMain.classList.add(mainNavClosed);
+}
+
+navToggle.addEventListener('click', function () {
+  if (navMain.classList.contains(mainNavClosed)) {
+    navMain.classList.remove(mainNavClosed);
+    navMain.classList.add(mainNavOpened);
+
+  } else {
+    navMain.classList.add(mainNavClosed);
+    navMain.classList.remove(mainNavOpened);
+    navList.style.overflowY='hidden';
+  }
+
+  if(navMain.classList.contains(mainNavOpened)) {
+    body.classList.add('overflow-hidden')
+    navList.style.overflowY='scroll';
+  } else {
+    body.classList.remove('overflow-hidden')
+  }
+
+  if(navMain.classList.contains('none')) {
+    body.classList.remove('overflow-hidden')
+    navList.style.overflowY='hidden';
+  }
 });
+
+navLinks.forEach(function(el){
+  el.addEventListener('click', function(){
+    navMain.classList.remove(mainNavOpened)
+    navMain.classList.add(mainNavClosed)
+    body.classList.remove('overflow-hidden')
+  })
+})
 
 // Form
 const anchors = document.querySelectorAll('a[href*="#"]')
