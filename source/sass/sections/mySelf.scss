@@ -1,0 +1,19 @@
+.mySelf {
+
+        &__list {
+                list-style-type: none;
+        }
+
+        &__item {
+                display: flex;
+                align-items: center;
+
+                .f-basicLightSubtitle {
+                        color: $black;
+                }
+        }
+
+        &__subscribe {
+                margin-left: 20px;
+        }
+}
