@@ -17,8 +17,9 @@
         @media (max-width: $tb) {
                 width: 275px;
                 height: 275px;
-                left: 43px;
-                top: 330px;
+                left: 50%;
+                transform: translate(-50%, 0);
+                top: 266px;
         }
 
 
