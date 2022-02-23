@@ -31,7 +31,6 @@
 
     @media (max-width: $ds) {
       display: block;
-      right: -10px;
       min-width: 50px;
       min-height: 50px;
       margin-bottom: 0;
@@ -42,7 +41,6 @@
       min-width: auto;
       position: relative;
       min-height: 50px;
-      right: 10px;
       margin-bottom: 222px;
       background-color: transparent;
     }
@@ -137,7 +135,7 @@
   }
 
   .main-nav--opened .main-nav {
-    right: 10px;
+    right: 0;
     z-index: 10;
     min-width: 100vw;
   }
