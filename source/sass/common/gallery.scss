@@ -21,6 +21,8 @@
 	float: left;
 	transform: translateZ(0);
 	overflow: hidden;
+	display: flex;
+    justify-content: center;
 }
 
 .gallery-grab {
@@ -30,6 +32,8 @@
 .gallery-dots {
 	display: flex;
 	justify-content: center;
+	position: absolute;
+    bottom: 20px;
 }
 
 .gallery-dot {
@@ -64,7 +68,7 @@
 .gallery-nav-left,
 .gallery-nav-right{
 	position: absolute;
-	width: 20px;
+	width: 30px;
 	height: 30px;
 	border: none;
 	outline: none;
@@ -76,13 +80,13 @@
 }
 
 .gallery-nav-left {
-	background: url('./icons/arrow-left.svg') no-repeat center;
+	background: url('../img/icons/arrow-left.svg') no-repeat center;
 	background-size: cover;
 	left: 0;
 }
 
 .gallery-nav-right {
-	background: url('./icons/arrow-right.svg') no-repeat center;
+	background: url('../img/icons/arrow-right.svg') no-repeat center;
 	background-size: cover;
 	right: 0;
 }

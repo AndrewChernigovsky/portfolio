@@ -73,18 +73,25 @@
 .education-sertificates {
         &__wrapper {
                 display: flex;
+                justify-content: center;
+                min-width: 100%;
         }
         &__slide {
+       
 
                 img {
-                        width: 300px;
+                        width: 600px;
                         height: auto;
                         transition: 0.3s ease;
                         pointer-events: none;
 
-                        &:hover {
-                                width: 80vw;
-                                transition: 0.3s ease;
+                        @media (max-width: $ds) {
+                                width: 450px;
+                        }
+                
+                
+                        @media (max-width: $tb) {
+                                width: 300px;
                         }
                 }
         }
