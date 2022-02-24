@@ -1,90 +1,91 @@
 .section {
-    position: relative;
-    max-width: 300px;
-    display: flex;
-    flex-wrap: wrap;
+        position: relative;
+        max-width: 300px;
+        display: flex;
+        flex-wrap: wrap;
 }
 
 .education {
+        &__wrapper {
+                min-width: 200px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                position: relative;
 
-    &__wrapper {
-        min-width: 200px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        position: relative;
+                .f-basicLightSubtitle {
+                        max-width: 400px;
+                        word-break: break-all;
+                }
 
-        .f-basicLightSubtitle {
-            max-width: 400px;
-            word-break: break-all;
+                &::before {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        height: 3px;
+                        min-width: 56%;
+                        top: 69px;
+                        left: 336px;
+                        background-color: $basicblue1;
+                }
         }
 
-        &::before{
-            content: '';
-            display: block;
-            position: absolute;
-            min-width: 56%;
-            height: 3px;
-            top: 69px;
-            left: 336px;
-            background-color: $basicblue1;
+        &__data {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
         }
-    }
 
-    &__data {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    &__data-wrapper {
-        .f-basicLightParagraph{
-            color: $black;
-            font-weight: 400;
+        &__data-wrapper {
+                .f-basicLightParagraph {
+                        color: $black;
+                        font-weight: 400;
+                }
         }
-    }
 
-    &__data-inner {
-        .f-basicLightParagraph {
-            color: $black;
-            font-weight: 700;
+        &__data-inner {
+                .f-basicLightParagraph {
+                        color: $black;
+                        font-weight: 700;
+                }
+
+
+                text-align: right;
         }
-    }
 }
 
 .educationImage-wrapper {
-    position: relative;
-    width: 100px;
-    height: 100px;
-    background-color: $basicblue1;
-    border-radius: 50%;
+        position: relative;
+        width: 100px;
+        height: 100px;
+        background-color: $basicblue1;
+        border-radius: 50%;
 
-    img {
-        width: 70px;
-        height: 70px;
-        position: absolute;
-        left: 12px;
-        top: 12px;    
-    }
+        img {
+                width: 70px;
+                height: 70px;
+                position: absolute;
+                left: 12px;
+                top: 12px;
+        }
 }
 
 .education-sertificates {
-    &__wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    &__slide {
-        img {
-            width: 300px;
-            height: auto;
-            transition: 0.3s ease;
-            
-            &:hover {
-                width: 80vw;
-                transition: 0.3s ease;
-            }
+        &__wrapper {
+                display: flex;
         }
-      
-    }
+        &__slide {
+
+                img {
+                        width: 300px;
+                        height: auto;
+                        transition: 0.3s ease;
+                        pointer-events: none;
+
+                        &:hover {
+                                width: 80vw;
+                                transition: 0.3s ease;
+                        }
+                }
+        }
 }

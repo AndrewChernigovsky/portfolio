@@ -5,15 +5,26 @@
         justify-content: space-between;
         position: relative;
 
-        &::before{
-            content: '';
-            display: block;
-            position: absolute;
-            min-width: 56%;
-            height: 3px;
-            top: 69px;
-            left: 336px;
-            background-color: $basicblue1;
+        &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                min-width: 683px;
+                height: 3px;
+                top: 69px;
+                left: 336px;
+                background-color: $basicblue1;
+
+                @media (max-width: $ds) {
+                        min-width: 54%;
+                        top: 52px;
+                }
+
+                @media (max-width: $tb) {
+                        min-width: 47%;
+                        left: 0;
+                        top: 70px;
+                }
         }
 }
 
@@ -24,11 +35,34 @@
         background-color: $basicblue1;
         border-radius: 50%;
 
+        @media (max-width: $ds) {
+                width: 70px;
+                height: 70px;
+        }
+
+        @media (max-width: $tb) {
+                width: 50px;
+                height: 50px;
+        }
+
+
+
         img {
-            width: 70px;
-            height: 70px;
-            position: absolute;
-            left: 50%;
-            transform: translate(-50%, 15%);
+                width: 70px;
+                height: 70px;
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%, 15%);
+
+                @media (max-width: $ds) {
+                        width: 50px;
+                        height: 50px;
+                }
+
+                @media (max-width: $tb) {
+                        width: 30px;
+                        height: 30px;
+                        transform: translate(-50%, 27%);
+                }
         }
 }
