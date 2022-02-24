@@ -4,7 +4,11 @@
                 justify-content: space-between;
                 align-items: center;
                 max-width: 40%;
-                min-width: 23%;            
+                min-width: 23%;          
+                
+                @media (max-width: $tb) {
+                        max-width: 100%;
+                }
 
                 .f-basicLightParagraph {
                         color: $black;
@@ -12,11 +16,6 @@
 
                 span.f-basicLightParagraph:first-child {
                         font-weight: 700;
-                }
-
-                span.f-basicLightParagraph {
-                        font-weight: 400;
-                        font-size: 2.4rem;
                 }
         }
 
@@ -27,7 +26,6 @@
 
                 h3 {
                     color: $basicblue;
-                    font-size: 2.4rem;
                     font-weight: 700;
                 }
         }
@@ -48,11 +46,28 @@
                                 background-color: $basicblue1;
                                 top: 7px;
                                 left: -33px;
+
+                                @media (max-width: $tb) {
+                                        width: 5px;
+                                        height: 5px;
+                                }
                         }
                 }
         }
 
         .company {
                 display: grid;
+        }
+}
+
+.titleJob {
+        font-size:  2.6rem;
+        font-weight: 700;
+
+        @media (max-width: $ds) {
+                font-size:  2.4rem;
+        }
+        @media (max-width: $tb) {
+                font-size:  2.2rem;
         }
 }

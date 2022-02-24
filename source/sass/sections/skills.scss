@@ -1,5 +1,10 @@
 .skills-list {
-         display: flex;
-         justify-content: space-around;
-         list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+
+        @media (max-width: $tb) {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+    }
 }

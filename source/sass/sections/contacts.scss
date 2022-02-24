@@ -23,6 +23,11 @@
                         font-weight: 400;
                         color: $white;
                         text-decoration: none;
+
+
+                        @media (max-width: $tb) {
+                                padding-left: 0;
+                        }
                 }
 
                 a {

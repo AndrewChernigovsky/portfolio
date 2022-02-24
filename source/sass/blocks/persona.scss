@@ -29,12 +29,15 @@
                         @media (max-width: $ds) {
                                 font-size: 4.8rem;
                         }
+
                         @media (max-width: $tb) {
                                 font-size: 3.4rem;
                         }
                 }
 
                 .f-basicLightSubtitle {
+                        color: $white;
+
                         @media (max-width: $ds) {
                                 font-size: 3.6rem;
                         }

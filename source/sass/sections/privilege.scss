@@ -14,6 +14,10 @@
     &__wrapper {
         padding-bottom: 20px;
 
+        @media (max-width: $tb) {
+            padding-right: 10px;
+        }
+
         .f-basicLightParagraph {
             padding-left: 50px;
             position: relative;
@@ -29,6 +33,11 @@
                 border-radius: 50%;
                 left: 20px;
                 top: 4px;
+
+                @media (max-width: $tb) {
+                    width: 10px;
+                    height: 10px;
+                }
             }
         }
     }
