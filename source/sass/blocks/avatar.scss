@@ -1,7 +1,7 @@
 .avatar {
         position: absolute;
-        width: 470px;
-        height: 470px;
+        width: 432px;
+        height: 432px;
         overflow: hidden;
         border-radius: 50%;
         top: 119px;
@@ -27,7 +27,7 @@
                 width: 100%;
                 height: auto;
                 position: absolute;
-                top: -237px;
+                top: 0;
 
                 @media (max-width: $tb) {
                         top: -134px;
