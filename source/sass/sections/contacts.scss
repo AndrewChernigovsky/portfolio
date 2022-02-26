@@ -50,3 +50,9 @@
                 }
         }
 }
+
+.phone {
+        @media (max-width: $tb) {
+                margin-right: 25px;
+        }
+}

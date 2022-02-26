@@ -10,7 +10,7 @@
                         text-decoration: none;
                         color: $black;
                         transition: 0.3s ease;
-                        
+
                         &:visited {
                                 color: $black;
                         }
@@ -30,6 +30,11 @@
                         height: 1px;
                         top: 14px;
                         left: -36px;
+
+                        @media (max-width: $tb) {
+                                top: 8px;
+                        }
+
 
                 }
         }

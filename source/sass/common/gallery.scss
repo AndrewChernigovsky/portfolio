@@ -14,6 +14,17 @@
 .gallery-wrapper {
 	overflow: hidden;
 	touch-action: none;
+        max-height: 845px;
+
+        @media (max-width: $ds) {
+                max-height: 660px;
+        }
+
+        @media (max-width: $tb) {
+                max-height: 425px;
+        }
+
+
 }
 
 .gallery-slide {

@@ -28,10 +28,5 @@
                 height: auto;
                 position: absolute;
                 top: 0;
-
-                @media (max-width: $tb) {
-                        top: -134px;
-                }
-
         }
 }
