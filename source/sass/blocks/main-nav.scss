@@ -228,8 +228,9 @@
         min-width: 100%;
         display: grid;
         gap: 5px;
-        grid-template-columns: repeat(4, min-content);
+        grid-template-columns: repeat(7, min-content);
         padding-bottom: 0;
+        overflow-x: hidden;
 
         @media (max-width: $ds) {
                 grid-template-columns: 1fr;
