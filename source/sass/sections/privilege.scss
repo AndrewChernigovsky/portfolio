@@ -3,6 +3,11 @@
     min-height: 400px;
     margin-bottom: 35px;
 
+    @media (max-width: $tb) {
+        min-height: 265px;
+    }
+
+
     .f-basicLightSubtitle {
         padding: 20px 40px;
         background-color: $basicblue1;

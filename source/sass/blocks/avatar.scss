@@ -1,32 +1,31 @@
 .avatar {
-        position: absolute;
+    width: 432px;
+    height: 432px;
+    overflow: hidden;
+    border-radius: 50%;
+
+    @media (max-width: $ds) {
+        width: 450px;
+        height: 450px;
+    }
+
+
+    @media (max-width: $tb) {
+        width: 275px;
+        height: 275px;
+    }
+
+
+    img {
         width: 432px;
-        height: 432px;
+        height: auto;
+        position: absolute;
         overflow: hidden;
         border-radius: 50%;
-        top: 119px;
-        left: 325px;
+        top: 0;
 
         @media (max-width: $ds) {
-                width: 450px;
-                height: 450px;
-                left: 120px;
+            width: 450px;
         }
-
-
-        @media (max-width: $tb) {
-                width: 275px;
-                height: 275px;
-                left: 50%;
-                transform: translate(-50%, 0);
-                top: 266px;
-        }
-
-
-        img {
-                width: 100%;
-                height: auto;
-                position: absolute;
-                top: 0;
-        }
+    }
 }
